@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "args": [],
+      "command": "Invoke-Lint",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "label": "Invoke-Lint",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": "$pester",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "pwsh",
+          "args": [
+            "-NonInteractive",
+            "-NoProfile",
+            "-Command"
+          ]
+        }
+      }
+    },
+    {
+      "args": [],
+      "command": "Invoke-Test",
+      "group": {
+        "isDefault": true,
+        "kind": "test"
+      },
+      "label": "Invoke-Test",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": "$pester",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "pwsh",
+          "args": [
+            "-NonInteractive",
+            "-NoProfile",
+            "-Command"
+          ]
+        }
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
