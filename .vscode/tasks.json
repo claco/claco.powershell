@@ -1,0 +1,135 @@
+{
+  "tasks": [
+    {
+      "label": "Initialize-WorkspaceRepository",
+      "command": "Initialize-WorkspaceRepository",
+      "args": [
+        "-Trusted",
+        "-Force",
+        "|",
+        "Format-List"
+      ],
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "options": {
+        "shell": {
+          "executable": "pwsh",
+          "args": [
+            "-NonInteractive",
+            "-NoProfile",
+            "-Command"
+          ]
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": "$pester",
+      "type": "shell"
+    },
+    {
+      "label": "Invoke-Lint",
+      "command": "Invoke-Lint",
+      "args": [],
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": "$pester",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "pwsh",
+          "args": [
+            "-NonInteractive",
+            "-NoProfile",
+            "-Command"
+          ]
+        }
+      }
+    },
+    {
+      "label": "Invoke-Test",
+      "command": "Invoke-Test",
+      "args": [],
+      "group": {
+        "isDefault": true,
+        "kind": "test"
+      },
+      "options": {
+        "shell": {
+          "executable": "pwsh",
+          "args": [
+            "-NonInteractive",
+            "-NoProfile",
+            "-Command"
+          ]
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": "$pester",
+      "type": "shell"
+    },
+    {
+      "label": "Publish-WorkspaceModule",
+      "command": "Publish-WorkspaceModule",
+      "args": [
+        "-Force",
+        "|",
+        "Format-List"
+      ],
+      "dependsOn": "Initialize-WorkspaceRepository",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": "$pester",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "pwsh",
+          "args": [
+            "-NonInteractive",
+            "-NoProfile",
+            "-Command"
+          ]
+        }
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
