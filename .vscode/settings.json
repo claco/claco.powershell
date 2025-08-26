@@ -1,0 +1,63 @@
+{
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "autoloaded",
+    "autoloading",
+    "claco",
+    "laco",
+    "LASTEXITCODE",
+    "pwsh",
+    "TARGETARCH",
+    "TARGETOS",
+    "usernamehw"
+  ],
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+  "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
+  "powershell.codeFormatting.preset": "OTBS",
+  "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+  "powershell.codeFormatting.useConstantStrings": true,
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "powershell.codeFormatting.whitespaceBetweenParameters": true,
+  "powershell.enableReferencesCodeLens": false,
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.pester.outputVerbosity": "Detailed",
+  "powershell.pester.useLegacyCodeLens": false,
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.scriptAnalysis.settingsPath": "./Modules/Claco.Powershell/PSScriptAnalyzerSettings.psd1",
+  "remove-empty-lines.allowedNumberOfEmptyLines": 1,
+  "remove-empty-lines.runOnSave": true,
+  "terminal.integrated.defaultProfile.osx": "pwsh",
+  "terminal.integrated.env.linux": {
+    "PSModulePath": "${workspaceFolder}/Modules"
+  },
+  "terminal.integrated.env.osx": {
+    "PSModulePath": "${workspaceFolder}/Modules"
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.autoIndent": "advanced"
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.autoIndent": "advanced"
+  },
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.rulers": [
+      115
+    ],
+    "editor.wordWrapColumn": 115
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.autoIndent": "advanced"
+  }
+}

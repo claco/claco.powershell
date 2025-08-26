@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PowerShell: Module Interactive Session",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "Import-Module -Force ${workspaceFolder}/Modules/Claco.Powershell/Claco.Powershell.psd1"
+    }
+  ]
+}
